@@ -1,0 +1,5 @@
+/* Estilo solicitado para el Párrafo 1 */
+.externo {
+    border: 1px dotted red;
+    font-style: italic;
+}
