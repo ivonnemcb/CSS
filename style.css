@@ -3,3 +3,25 @@
     border: 1px dotted red;
     font-style: italic;
 }
+CSS
+
+/* --- Estilos para el Ejercicio 3B --- */
+
+/* Aplicamos estilos al body para que todos los hijos los hereden */
+body {
+    font-size: 14px;            /* Tamaño de fuente 14px */
+    font-family: 'Gill Sans', sans-serif; /* Fuente Gill sans */
+    color: brown;               /* Color de fuente marrón */
+    background-color: lightblue; /* Fondo azul claro */
+    line-height: 1.5;           /* Interlineado de 1.5 */
+}
+
+/* Mediaquery: Se activa cuando la pantalla es mayor a 600px */
+@media (min-width: 600px) {
+    #titulo-valores {
+        background-color: green; /* Fondo verde para "Los valores" */
+    }
+    #lista-valores {
+        background-color: orange; /* Fondo naranja para el listado */
+    }
+}
