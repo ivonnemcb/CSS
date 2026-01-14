@@ -81,3 +81,48 @@ CSS
     background-color: #005f32;   /* Un verde más oscuro al pasar el ratón */
     transition: 0.3s;
 }
+CSS
+
+/* --- Estilos para el Ejercicio 3E (Formulario) --- */
+
+.contenedor-formulario {
+    border: 1px solid black;    /* El recuadro que se ve en la imagen */
+    padding: 30px;
+    width: 450px;
+    margin: 50px auto;          /* Centra el formulario en la pantalla */
+    font-family: Arial, sans-serif;
+}
+
+.campo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.campo label {
+    font-weight: bold;
+}
+
+.campo input, .campo textarea {
+    width: 250px;
+    border: 1px solid gray;
+}
+
+/* Estilo del Botón de Enviar */
+.boton-enviar {
+    display: block;             /* Necesario para centrarlo con margin */
+    margin: 20px auto 0;        /* Centrado horizontal solicitado */
+    background-color: blue;     /* Color de fondo inicial */
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 20px;        /* Bordes redondeados como en la imagen */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Cambio al pasar el cursor (Hover) */
+.boton-enviar:hover {
+    background-color: darkblue; /* Cambia a un azul más oscuro */
+    transition: 0.3s;
+}
