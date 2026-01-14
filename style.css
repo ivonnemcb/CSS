@@ -25,3 +25,28 @@ body {
         background-color: orange; /* Fondo naranja para el listado */
     }
 }
+CSS
+
+/* --- Estilos para el Ejercicio 3C (Menú Flexbox) --- */
+
+.menu-flex {
+    display: flex;              /* Activa el modo Flexbox */
+    list-style: none;           /* Quita los puntos de la lista */
+    background-color: black;    /* Fondo negro del menú */
+    padding: 20px;              /* Espaciado interno */
+    justify-content: space-around; /* Distribuye los elementos equitativamente */
+    margin: 0;
+}
+
+.menu-flex li a {
+    color: white;               /* Texto blanco */
+    text-decoration: none;      /* Quita el subrayado de los enlaces */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* Efecto Hover: Cambia el color al pasar el ratón */
+.menu-flex li a:hover {
+    color: #ffaaff;             /* Cambia a un tono rosado/lila al pasar el cursor */
+    transition: 0.3s;           /* Hace que el cambio de color sea suave */
+}
