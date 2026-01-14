@@ -1,96 +1,87 @@
-/* Estilo solicitado para el Párrafo 1 */
+CSS
+
+/* --- Estilos para el Ejercicio 3A --- */
 .externo {
     border: 1px dotted red;
     font-style: italic;
 }
-CSS
 
 /* --- Estilos para el Ejercicio 3B --- */
-
-/* Aplicamos estilos al body para que todos los hijos los hereden */
 body {
-    font-size: 14px;            /* Tamaño de fuente 14px */
-    font-family: 'Gill Sans', sans-serif; /* Fuente Gill sans */
-    color: brown;               /* Color de fuente marrón */
-    background-color: lightblue; /* Fondo azul claro */
-    line-height: 1.5;           /* Interlineado de 1.5 */
+    font-size: 14px;
+    font-family: 'Gill Sans', sans-serif;
+    color: brown;
+    background-color: lightblue;
+    line-height: 1.5;
 }
 
-/* Mediaquery: Se activa cuando la pantalla es mayor a 600px */
 @media (min-width: 600px) {
     #titulo-valores {
-        background-color: green; /* Fondo verde para "Los valores" */
+        background-color: green;
     }
     #lista-valores {
-        background-color: orange; /* Fondo naranja para el listado */
+        background-color: orange;
     }
 }
-CSS
 
 /* --- Estilos para el Ejercicio 3C (Menú Flexbox) --- */
-
 .menu-flex {
-    display: flex;              /* Activa el modo Flexbox */
-    list-style: none;           /* Quita los puntos de la lista */
-    background-color: black;    /* Fondo negro del menú */
-    padding: 20px;              /* Espaciado interno */
-    justify-content: space-around; /* Distribuye los elementos equitativamente */
+    display: flex;
+    list-style: none;
+    background-color: black;
+    padding: 20px;
+    justify-content: space-around;
     margin: 0;
 }
 
 .menu-flex li a {
-    color: white;               /* Texto blanco */
-    text-decoration: none;      /* Quita el subrayado de los enlaces */
+    color: white;
+    text-decoration: none;
     font-family: Arial, sans-serif;
     font-weight: bold;
 }
 
-/* Efecto Hover: Cambia el color al pasar el ratón */
 .menu-flex li a:hover {
-    color: #ffaaff;             /* Cambia a un tono rosado/lila al pasar el cursor */
-    transition: 0.3s;           /* Hace que el cambio de color sea suave */
+    color: #ffaaff;
+    transition: 0.3s;
 }
-CSS
 
 /* --- Estilos para el Ejercicio 3D (Menú Lateral) --- */
-
 .sidebar {
-    background-color: #007c41;   /* Verde oscuro típico de Esri */
-    width: 250px;                /* Ancho del menú lateral */
-    height: 100vh;               /* Que ocupe todo el alto de la pantalla */
+    background-color: #007c41;
+    width: 250px;
+    height: 100vh;
     padding-top: 20px;
 }
 
 .menu-lateral {
-    list-style: none;            /* Quita los puntos */
+    list-style: none;
     padding: 0;
     margin: 0;
 }
 
 .menu-lateral li a {
-    display: block;              /* Para que el enlace ocupe todo el ancho de la línea */
+    display: block;
     color: white;
     text-decoration: none;
-    padding: 15px 25px;          /* Espaciado para facilitar la lectura */
+    padding: 15px 25px;
     font-family: 'Segoe UI', sans-serif;
     font-weight: bold;
 }
 
-/* Efecto Hover: Cambia el fondo al pasar el cursor */
 .menu-lateral li a:hover {
-    background-color: #005f32;   /* Un verde más oscuro al pasar el ratón */
+    background-color: #005f32;
     transition: 0.3s;
 }
-CSS
 
 /* --- Estilos para el Ejercicio 3E (Formulario) --- */
-
 .contenedor-formulario {
-    border: 1px solid black;    /* El recuadro que se ve en la imagen */
+    border: 1px solid black;
     padding: 30px;
     width: 450px;
-    margin: 50px auto;          /* Centra el formulario en la pantalla */
+    margin: 50px auto;
     font-family: Arial, sans-serif;
+    background-color: white; /* Añadido para que sea legible sobre el fondo azul */
 }
 
 .campo {
@@ -108,21 +99,98 @@ CSS
     border: 1px solid gray;
 }
 
-/* Estilo del Botón de Enviar */
 .boton-enviar {
-    display: block;             /* Necesario para centrarlo con margin */
-    margin: 20px auto 0;        /* Centrado horizontal solicitado */
-    background-color: blue;     /* Color de fondo inicial */
+    display: block;
+    margin: 20px auto 0;
+    background-color: blue;
     color: white;
     padding: 10px 40px;
     border: none;
-    border-radius: 20px;        /* Bordes redondeados como en la imagen */
+    border-radius: 20px;
     font-weight: bold;
     cursor: pointer;
 }
 
-/* Cambio al pasar el cursor (Hover) */
 .boton-enviar:hover {
-    background-color: darkblue; /* Cambia a un azul más oscuro */
+    background-color: darkblue;
     transition: 0.3s;
+}
+
+/* --- Estilos para el Ejercicio 3F (Opiniones con Flexbox) --- */
+.tarjeta-opinion {
+    display: flex;              /* Alinea foto, texto y puntuación en horizontal */
+    align-items: center;        /* Centra los elementos verticalmente */
+    border: 1px solid #ddd;     /* Borde gris sugerido */
+    padding: 20px;
+    width: 800px;               /* Ancho de la tarjeta */
+    margin: 20px auto;          /* Centra la tarjeta en la pantalla */
+    font-family: Arial, sans-serif;
+    background-color: white;    /* Fondo blanco para que resalte */
+}
+
+.foto-perfil {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;     /* Gris para el cuadro de la foto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    margin-right: 20px;
+}
+
+.info-centro {
+    flex-grow: 1;               /* Empuja la puntuación hacia la derecha */
+}
+
+.info-centro h3 {
+    margin: 0;
+    color: #333;
+}
+
+.info-centro p {
+    color: #888;
+    margin: 5px 0 0;
+}
+
+.puntuacion {
+    background-color: #aaa;    /* Fondo gris del número */
+    color: white;              /* Texto blanco */
+    padding: 15px 20px;
+    border-radius: 10px;       /* Bordes redondeados */
+    font-weight: bold;
+    font-size: 1.2em;
+}
+CSS
+
+/* Estilos adicionales para los botones del 3F */
+.contenedor-botones {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px; /* Espacio entre botones */
+}
+
+.btn-blanco {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 8px 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-gris {
+    background-color: #888;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.comentarios {
+    font-size: 0.9em;
+    color: #aaa;
+    margin-top: 10px;
 }
