@@ -50,3 +50,34 @@ CSS
     color: #ffaaff;             /* Cambia a un tono rosado/lila al pasar el cursor */
     transition: 0.3s;           /* Hace que el cambio de color sea suave */
 }
+CSS
+
+/* --- Estilos para el Ejercicio 3D (Menú Lateral) --- */
+
+.sidebar {
+    background-color: #007c41;   /* Verde oscuro típico de Esri */
+    width: 250px;                /* Ancho del menú lateral */
+    height: 100vh;               /* Que ocupe todo el alto de la pantalla */
+    padding-top: 20px;
+}
+
+.menu-lateral {
+    list-style: none;            /* Quita los puntos */
+    padding: 0;
+    margin: 0;
+}
+
+.menu-lateral li a {
+    display: block;              /* Para que el enlace ocupe todo el ancho de la línea */
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;          /* Espaciado para facilitar la lectura */
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+}
+
+/* Efecto Hover: Cambia el fondo al pasar el cursor */
+.menu-lateral li a:hover {
+    background-color: #005f32;   /* Un verde más oscuro al pasar el ratón */
+    transition: 0.3s;
+}
